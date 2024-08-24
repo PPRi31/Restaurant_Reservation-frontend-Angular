@@ -1,0 +1,257 @@
+.principal{
+  display: flex;
+  background-color: #202027;
+  flex-direction: column;
+  padding: 10px; 
+}
+.contenedor-cabecera{
+  background-color: #2C2C36;
+  width: auto;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.titulo-cabecera{
+  color: #ffffff;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin: 0;
+}
+.info-lugar {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-lugar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-lugar li {
+  margin: 5px 10px 10px 0;
+  color: #ffffff;
+}
+
+
+.info-lugar li:not(:last-child):after {
+  content: "|";
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #ccc;
+}
+
+.contenedor-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+
+
+.imagenpresentacion{
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+}
+
+.imagen {
+  max-width: 100%; 
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.cuadro-informacion{
+  width: 100%; 
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+
+.texto p {
+  margin-bottom: 30px; 
+}
+
+.texto ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.texto li {
+  margin-bottom: 5px; 
+}
+
+.texto mat-icon {
+  margin-right: 10px; 
+  
+}
+ 
+.contenedor-informacion{
+  margin-bottom: 20px; 
+}
+
+ .example-card {
+  box-sizing: border-box;
+  max-width: 100%;
+  box-shadow: 0 0 3px 0 #7DD435;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2C2C36;
+  color: #ffffff;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+ .contenedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}   
+
+
+.titulo h4{
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: underline;
+}
+
+.contenedor-opinion{
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; 
+}
+.opciones{
+  box-sizing: border-box;
+  box-shadow: 0 0 5px 0 #7DD435;
+  justify-items: center;
+  align-items: center;
+  background-color: #2C2C36;
+  color: #ffffff;
+  width: 100%; 
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.opciones mat-card-title{
+  font-size: 40px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.opciones table td b{
+  font-size: 20px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+label {
+  cursor: pointer; 
+}
+
+.example-section {
+  margin: 12px 0;
+  width: 100%;
+  border-collapse: collapse;
+}
+.example-section td {
+  padding: 10px; 
+  color: #ffffff;
+}
+
+.example-section hr {
+  margin: 20px 0; 
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.example-form p{
+  font-size: 24px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.opiniones{
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.agregar-opinion{
+  background-color: #7DD435 !important; 
+  color: black !important ;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor-imagen {
+    margin-left: 0; 
+  }
+
+  .imagen {
+    flex-direction: column; 
+  }
+
+  .imagenpresentacion {
+    max-width: 100%;
+    height: auto;
+    max-height: none; 
+    margin-bottom: 10px; 
+  }
+
+  .example-card {
+    width: 100%; 
+  }
+
+  .contenedor{
+    display: flex;
+    flex-direction: column;
+  }  
+  .contenedor-opinion {
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+
+  .opciones {
+    width: 100%; 
+  }
+
+  .info-lugar li:not(:last-child):after {
+    display: none;
+  }
+}

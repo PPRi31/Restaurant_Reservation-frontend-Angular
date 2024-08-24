@@ -1,0 +1,25 @@
+#login-card{
+    
+    padding: 20px;
+  
+}
+
+.form-body{
+    padding-top: 20px;
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+   flex-wrap: wrap; 
+}
+
+.form-field{
+   flex-grow: 1;
+   width: 40%;
+   
+}
+.md-dialog-container {
+    background-color: #000;
+    width: 250px;
+    height: 250px
+}
+

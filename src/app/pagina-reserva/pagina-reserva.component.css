@@ -1,0 +1,29 @@
+.pagina-reserva-body {
+  background-color: #202027;
+}
+
+.botones-reserva {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.example-form-field {
+  width: 150px;
+
+  align-self: center;
+}
+
+.mat-label {
+  padding: 0px;
+}
+
+.sugerencias-reservas {
+  padding-top: 50px;
+}
+
+.boton-reservar {
+  height: 56px;
+}

@@ -1,0 +1,82 @@
+<div class="profile-container">
+  <div class="left-column">
+    <mat-card class="new-card">
+      <div *ngIf="!infoService.isLogged" >
+        <img [src]="user1.avatarUrl" class="UserAvatar">
+        <h2>{{ "Usuario: " + userName }}</h2>
+        <p>{{ "Email: " + userEmail }}</p>
+        <p>{{ "Teléfono: " + userTelefono }}</p>
+      </div>
+      <div *ngIf="infoService.isLogged" >
+        <img [src]="user1.avatarUrl" class="UserAvatar">
+        <h2>{{ "Usuario: "   }}</h2>
+        <p>{{ "Email: "   }}</p>
+        <p>{{ "Teléfono: "  }}</p>
+      </div>
+  
+  
+      </mat-card>
+  </div>
+  <div class="right-column">
+    <h3>Top Reservas</h3>
+    <section class="contenedor">
+      <div class="cuadro-informacion">
+        <mat-card class="example-card">
+          <mat-card-content>
+            <div class="contenido">
+              <img src="assets/restaurante1.jpg" class="side-image">
+              <div>
+                <div class="titulo">
+                  <h4>La parrillada del ñato</h4>
+                </div>
+                <div class="estrellas">
+                  <mat-icon>star</mat-icon>
+                  <mat-icon>star</mat-icon>
+                  <mat-icon>star</mat-icon>
+                  <mat-icon>star</mat-icon>
+                  <mat-icon>star</mat-icon>
+                </div>
+                <div class="ubicacion">
+                  <mat-icon> place</mat-icon>
+                  <p>Av. Francisco de Orellana</p>
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button class="btnColor" (click)="reserva1()">Reservar</button>
+            <button mat-raised-button class="btnColor" align="end" (click)="Resenia1()">Comentar y calificar</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+      <div class="cuadro-informacion">
+        <mat-card class="example-card">
+          <mat-card-content>
+            <div class="contenido">
+              <img src="assets/restaurante2.jpg" class="side-image">
+              <div>
+                <div class="titulo">
+                  <h4>El café de Tere</h4>
+                  </div>
+                  <div class="estrellas">
+                    <mat-icon>star</mat-icon>
+                    <mat-icon>star</mat-icon>
+                    <mat-icon>star</mat-icon>
+                    <mat-icon>star</mat-icon>
+                  </div>
+                  <div class="ubicacion">
+                    <mat-icon> place</mat-icon>
+                    <p>Av. Hno Miguel Solar</p>
+                  </div>
+                </div>
+              </div>
+            </mat-card-content>
+            <mat-card-actions>
+              <button mat-raised-button class="btnColor" (click)="reserva1()">Reservar</button>
+              <button mat-raised-button class="btnColor" align="end" (click)="Resenia2()">Comentar y calificar</button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+    </section>
+  </div>
+</div>

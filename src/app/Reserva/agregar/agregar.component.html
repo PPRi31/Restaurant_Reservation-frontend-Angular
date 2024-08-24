@@ -1,0 +1,39 @@
+<mat-card class="login-container" [formGroup]="form">
+    <mat-card-header class="header">
+      <mat-card-title>Nueva Reserva</mat-card-title>
+    </mat-card-header>
+   
+    <mat-form-field >
+      <mat-label class="text">Nro.Mesa</mat-label>
+      <input  matInput  formControlName="position"   />         
+    </mat-form-field>
+
+    <mat-form-field >
+        <mat-label class="text">Cliente</mat-label>
+        <input  matInput formControlName="cliente" />         
+    </mat-form-field>
+
+    <mat-form-field >
+        <mat-label class="text">Fecha</mat-label>
+        <input  matInput  formControlName="fecha" value="00/00/00" />         
+     </mat-form-field>
+  
+     <mat-form-field >
+        <mat-label class="text">hora</mat-label>
+        <input  matInput  formControlName="hora" value="00:00"/>         
+     </mat-form-field>
+
+      <mat-form-field >
+        <mat-label class="text">Nro.Personas</mat-label>
+        <input  matInput formControlName="pe" />         
+     </mat-form-field>
+
+     <mat-form-field >
+      <mat-label class="text">Lugar</mat-label>
+      <input  matInput formControlName="lg" />         
+   </mat-form-field>
+    <mat-card-actions align="end">
+      <button mat-raised-button class="btnColor" (click)="Agregar()">Agregar</button>
+    </mat-card-actions>
+  </mat-card>
+

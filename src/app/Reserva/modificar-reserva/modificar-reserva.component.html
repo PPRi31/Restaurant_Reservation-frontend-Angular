@@ -1,0 +1,47 @@
+
+<mat-card id="login-card">
+  <mat-card-header class="header">
+    <mat-card-title>Modificar</mat-card-title>
+  </mat-card-header>
+  
+<form  class="form-body" [formGroup]="ReservaData" (ngSubmit) ="AgregarUsario()">
+  <mat-form-field appearance="outline" class="form-field">
+    <mat-label class="text">Id</mat-label>
+      <input class="form-input" matInput disabled value="{{datageneral.id}}">         
+  </mat-form-field>
+    
+  <mat-form-field appearance="outline" class="form-field">
+      <mat-label class="text">Id Restaurante</mat-label>
+      <input class="form-input"  matInput  formControlName="restaurante_id" />         
+   </mat-form-field>
+    
+   <mat-form-field appearance="outline" class="form-field">
+      <mat-label class="text">Id usuario</mat-label>
+      <input class="form-input" matInput  formControlName="usuario_id" />         
+   </mat-form-field>
+    
+    <mat-form-field appearance="outline" class="form-field">
+      <mat-label class="text">nombre</mat-label>
+      <input class="form-input"  matInput formControlName="nombre" />         
+   </mat-form-field>
+   
+   <mat-form-field appearance="outline" class="form-field">
+    <mat-label class="text">N. Personas</mat-label>
+    <input class="form-input"  matInput formControlName="cantidad_personas" />         
+ </mat-form-field>
+ 
+  
+ <mat-form-field appearance="outline" class="form-field">
+  <mat-label  class="text">Subtotal</mat-label>
+  <input class="form-input"  matInput disabled value="{{datageneral.subtotal}}"  />         
+</mat-form-field>
+<mat-form-field appearance="outline" class="form-field">
+  <mat-label class="text">Fecha Reserva</mat-label>
+  <input class="form-input"  matInput formControlName="fecha_reserva" />         
+</mat-form-field>
+  <mat-card-actions align="end">
+    <button mat-button type="submit"  class="login-button" (click)="AgregarUsario()">Agregar</button>
+  </mat-card-actions>
+  
+</form>
+</mat-card>

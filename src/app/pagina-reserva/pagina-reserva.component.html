@@ -1,0 +1,91 @@
+<div class="pagina-reserva-body">
+   
+  
+  
+  <form [formGroup] = "reservaData">
+    <div class="botones-reserva">
+      
+      <div class="tres-botones">
+        <mat-form-field class="example-form-field">
+          <mat-label>Nombre</mat-label>
+          <input matInput type="text" formControlName="nombre">
+         
+        </mat-form-field>
+        <mat-form-field class="example-form-field">
+          <mat-label>Fecha</mat-label>
+          <input matInput [matDatepicker]="datepicker" formControlName ="fecha"  />
+
+          <mat-datepicker-toggle
+          matIconSuffix
+          [for]="datepicker"
+          
+          ></mat-datepicker-toggle>
+          <mat-datepicker #datepicker >
+          <mat-datepicker-actions>
+            <button mat-button matDatepickerCancel>Cancelar</button>
+            <button mat-raised-button color="primary" matDatepickerApply>
+              Aplicar
+            </button>
+          </mat-datepicker-actions>
+        </mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field class="example-form-field">
+        <mat-label>Hora</mat-label>
+        <mat-select   formControlName="hora" >
+          <mat-option *ngFor="let hora of horas" [value]="hora" name="hora"  >{{
+            hora
+          }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field class="example-form-field">
+        <mat-label>Personas</mat-label>
+        <mat-select name="personas"  formControlName="personas" >
+            
+                <mat-option value="1">1 Persona</mat-option>
+                <mat-option value="2" >2 Personas</mat-option>
+                <mat-option value="3">3 Personas</mat-option>
+                <mat-option value="4">+3 Personas</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div>
+      
+        <mat-form-field class="example-full-width">
+          <mat-label>Restaurante</mat-label>
+          <input
+            type="text"
+            placeholder="Escoge uno"
+            aria-label="Number"
+            matInput
+            formControlName = "restaurante"
+            [matAutocomplete]="auto"
+           
+          />
+          <mat-autocomplete 
+          autoActiveFirstOption
+          #auto="matAutocomplete"  
+          >
+            <mat-option
+              *ngFor="let option of filteredOptions | async"
+              [value]="option.nombre"
+              
+            >
+              {{ option.nombre }}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+    
+    </div>
+
+    <div>
+      <button mat-raised-button class="boton-reservar" (click)="agregarReserva()" color="primary">Reservar</button>
+    </div>
+  </div>
+</form>
+
+  <div class="sugerencias-reservas">
+   
+    <app-nueva-reserva></app-nueva-reserva>
+</div>

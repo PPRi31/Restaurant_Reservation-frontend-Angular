@@ -1,0 +1,57 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+.webPage {
+  font-weight: bold;
+  
+}
+
+button.webPage {
+  font-size: 24px; 
+  padding: 10px 20px;
+  font-family:'Times New Roman', Times, serif;
+}
+.usuario {
+  font-family: 'NuevaFuente', sans-serif;
+}
+.logbtn{
+  font-size: 14px; 
+  padding: 0px 14px
+}
+.bgColor {
+  background-color: #2C2C36;
+  color: white;
+  margin: auto;
+  width:auto;
+
+  display: flex;
+  height: auto;
+}
+.btnColor {
+  background-color: #7DD435 !important; 
+  color: black !important ;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+:host {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+ .bgColor{
+  flex-direction: column;
+  
+ }
+  .btnColor{
+    flex-direction: column;
+      justify-content: space-evenly;
+  }
+  .textoinformacion,
+  .textoimagen {
+      width: 100%;
+  }
+ 
+}
+  

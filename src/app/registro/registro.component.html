@@ -1,0 +1,45 @@
+<form [formGroup]="formulario">
+  <mat-card class="login-container">
+  
+    <mat-card-header class="header">
+      <mat-card-title>Registro</mat-card-title>
+      <mat-icon>check_circle</mat-icon>
+    </mat-card-header>
+    <mat-form-field>
+      <mat-label>Id</mat-label>
+      <input matInput formControlName="Id">
+      <mat-icon matSuffix>account_circle</mat-icon>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Usuario</mat-label>
+      <input matInput formControlName="Nombre">
+      <mat-icon matSuffix>account_circle</mat-icon>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="Email">
+      <mat-icon matSuffix>mail_outline</mat-icon>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>Contraseña</mat-label>
+      <input matInput formControlName="Password">
+      <mat-icon matSuffix>vpn_key</mat-icon>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>Telefono</mat-label>
+      <input matInput formControlName="Telefono">
+      <mat-icon matSuffix>phone_android</mat-icon>
+    </mat-form-field>
+  
+    <mat-card-actions align="end">
+      <button (click)="guardarUsuario()" mat-raised-button  class="btnColor">Aceptar</button>
+     
+    </mat-card-actions>
+    <br>
+
+  </mat-card>
+</form>
+  

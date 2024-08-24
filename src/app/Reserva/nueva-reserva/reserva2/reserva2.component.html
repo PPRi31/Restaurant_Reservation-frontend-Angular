@@ -1,0 +1,180 @@
+<div class="principal">
+    <div class="contenedor-cabecera">   
+          <h2 class="titulo-cabecera">El café de Tere</h2>
+          <nav class="info-lugar">
+            <ul>
+              <li><mat-icon> place</mat-icon> Av. Hno. Miguel Solar</li>
+              <li><mat-icon> phone</mat-icon> 042627348</li>
+              <li><mat-icon> restaurant</mat-icon> Abierto desde: 06:30 de la mañana - 2:30 de la tarde</li>
+            </ul>
+          </nav>
+    </div>
+    <div class="contenedor-imagen">
+        <div class="imagen">
+            <img  class="imagenpresentacion" src="assets/restaurante2.jpg">
+            <img  class="imagenpresentacion" src="assets/restaurante2img1.jpg">
+        </div>
+    </div>
+    <div class="contenedor-informacion">
+        <section class="contenedor"> 
+            <div class="cuadro-informacion">
+                <mat-card class="example-card">
+                    <mat-card-content>
+                        <div class="contenido">
+                                <div class="titulo">
+                                    <h4>Puntuaciones y opiniones</h4>
+                                </div>
+                                <div class="texto">
+                                <p><b>4  </b><mat-icon>star</mat-icon><mat-icon>star</mat-icon><mat-icon>star</mat-icon><mat-icon>star</mat-icon> <br>
+                                </p><hr/>
+                                <p><b>Puntuaciones</b><br>
+                                    <ul>
+                                        <li><mat-icon> fastfood</mat-icon> Comida </li>
+                                        <li><mat-icon>room_service</mat-icon> Servicio</li>
+                                        <li><mat-icon> attach_money</mat-icon> calidad/Precio</li>
+                                        <li> <mat-icon>touch_app</mat-icon> Atmósfera</li>
+                                    </ul>   
+                                </div>                           
+                        </div>
+                    </mat-card-content>
+                </mat-card>             
+            </div> 
+            <div class="cuadro-informacion">
+                <mat-card class="example-card">
+                    <mat-card-content>
+                        <div class="contenido">
+                                <div class="titulo">
+                                    <h4>Detalles</h4>
+                                </div>
+                                <div class="texto">
+                                    <p><b>Tipos de Cocina</b> <br><br>
+                                    Latina, Café<br><br>
+                                    <b> Comidas</b><br><br>
+                                    Desayuno, Brunch<br><br>
+                                    <b>ventajas</b><br><br>
+                                    A domicilio, Para llevar, Terraza exterior, Capacidad, Aparcamiento disponible.</p> 
+                                </div> 
+                        </div>
+                    </mat-card-content>
+                </mat-card>             
+            </div>  
+            <div class="cuadro-informacion">
+                <mat-card class="example-card">
+                    <mat-card-content>
+                        <div class="contenido">
+                                <div class="titulo">
+                                    <h4>Ubicacion y contacto</h4>
+                                </div>
+                                <div class="texto">
+                                    <p align="left">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127584.22098039226!2d-80.04413330273437!3d-2.151042700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6da0ae39470b%3A0x1daa7bbfe238a325!2sEl%20Caf%C3%A9%20de%20Tere%20Garzota!5e0!3m2!1ses!2sec!4v1700685342366!5m2!1ses!2sec" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        <mat-icon> place</mat-icon> Av. Hno. Miguel Solar<br>
+                                        <mat-icon> phone</mat-icon> 042627348
+                                    </p>
+                                </div>                 
+                        </div>
+                    </mat-card-content>
+                </mat-card>             
+            </div>
+        </section>
+    </div>
+    <div class="contenedor-opinion">  
+        <mat-card class="opciones">
+                <mat-card-header>
+                <mat-card-title><b>Danos tu opinión</b><hr /></mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <table class="example-section" [formGroup]="toppings">
+                        <tr>
+                          <td><b>Puntuación</b></td>
+                          <td><b>Tipo de Reserva</b></td>
+                          <td><b>Época del año</b></td>
+                        </tr>
+                        <tr>
+                          <td><label><input type="checkbox" formControlName="puntuacionviajeros" (change)="manejarSeleccion('puntuacionviajeros', 'Excelente')">Excelente</label></td>
+                          <td><label><input type="checkbox" formControlName="tiporeservacion" (change)="manejarSeleccion('tiporeservacion', 'Familiar')">Familiar</label></td>
+                          <td><label><input type="checkbox" formControlName="epoca" (change)="manejarSeleccion('epoca', 'Ene-Feb')">Ene-Feb</label></td>
+                        </tr>
+                        <tr>
+                          <td><label><input type="checkbox" formControlName="puntuacionviajeros" (change)="manejarSeleccion('puntuacionviajeros', 'Muy bueno')">Muy bueno</label></td>
+                          <td><label><input type="checkbox" formControlName="tiporeservacion"(change)="manejarSeleccion('tiporeservacion', 'En pareja')">En pareja</label></td>
+                          <td><label><input type="checkbox" formControlName="epoca" (change)="manejarSeleccion('epoca', 'Mar-May')">Mar-May</label></td>
+                        </tr>
+                        <tr>
+                          <td><label><input type="checkbox" formControlName="puntuacionviajeros" (change)="manejarSeleccion('puntuacionviajeros', 'Normal')">Normal</label></td>
+                          <td><label><input type="checkbox" formControlName="tiporeservacion" (change)="manejarSeleccion('tiporeservacion', 'Solo')">Solo</label></td>
+                          <td><label><input type="checkbox" formControlName="epoca" (change)="manejarSeleccion('epoca', 'Jun-Ago')">Jun-Ago</label></td>
+                        </tr>
+                        <tr>
+                          <td><label><input type="checkbox" formControlName="puntuacionviajeros" (change)="manejarSeleccion('puntuacionviajeros', 'Malo')">Malo</label></td>
+                          <td><label><input type="checkbox" formControlName="tiporeservacion" (change)="manejarSeleccion('tiporeservacion', 'Negocios')">Negocios</label></td>
+                          <td><label><input type="checkbox" formControlName="epoca" (change)="manejarSeleccion('epoca', 'Sep-Nov')">Sep-Nov</label></td>
+                        </tr>
+                        <tr>
+                          <td><label><input type="checkbox" formControlName="puntuacionviajeros"(change)="manejarSeleccion('puntuacionviajeros', 'Pésimo')">Pésimo</label></td>
+                          <td><label><input type="checkbox" formControlName="tiporeservacion" (change)="manejarSeleccion('tiporeservacion', 'Amigos')">Amigos</label></td>
+                          <td><label><input type="checkbox" formControlName="epoca" (change)="manejarSeleccion('epoca', 'Dic')">Dic</label></td>
+                        </tr>
+                      </table>                      
+                    <hr />
+                </mat-card-content>
+                <div class="opiniones">
+                    <form class="example-form">
+                        <p>Como valorarías tu experiencia</p>
+                        <button class="agregar-opinion" mat-raised-button color="primary" [matMenuTriggerFor]="Valoracion">
+                            <mat-icon>star</mat-icon> {{ selectedOption || 'Valoracion' }}
+                          </button>
+                          <mat-menu #Valoracion="matMenu">
+                            <button mat-menu-item (click)="selectOption('1')">1 </button>
+                            <button mat-menu-item (click)="selectOption('2')">2 </button>
+                            <button mat-menu-item (click)="selectOption('3')">3 </button>
+                            <button mat-menu-item (click)="selectOption('4')">4 </button>
+                            <button mat-menu-item (click)="selectOption('5')">5 </button>
+                          </mat-menu>
+                        <p>Escribe tu opinión</p>
+                        <mat-form-field class="example-full-width">
+                            <textarea matInput [(ngModel)]="opinion"  name="opinion" placeholder="Este sitio es genial..."> {{ opinionGuardada || 'Ninguna opinión guardada' }}</textarea>
+                        </mat-form-field>
+                    </form>
+                </div>
+                <button  class="agregar-opinion" mat-raised-button (click)="guardarOpinion()">Agregar Opinión</button>
+        </mat-card>
+    </div>
+    <div class="contenedor-opinion">
+        <mat-card class="opciones">
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+                <!--- Note that these columns can be defined in any order.
+                      The actual rendered columns are set as a property on the row definition" -->
+              
+                <!-- Position Column -->
+                <ng-container matColumnDef="Nombre_Usuario">
+                  <th mat-header-cell *matHeaderCellDef> Usuario </th>
+                  <td mat-cell *matCellDef="let element"> {{element.nombre_Usuario}} </td>
+                </ng-container>
+              
+                <!-- Name Column -->
+                <ng-container matColumnDef="Valoracion">
+                  <th mat-header-cell *matHeaderCellDef> Valoracion </th>
+                  <td mat-cell *matCellDef="let element"> {{element.valoracion}} </td>
+                </ng-container>
+              
+                <!-- Weight Column -->
+                <ng-container matColumnDef="Comentario">
+                  <th mat-header-cell *matHeaderCellDef> Comentario </th>
+                  <td mat-cell *matCellDef="let element"> {{element.comentario}} </td>
+                </ng-container>
+              
+                <!-- Symbol Column -->
+                <ng-container matColumnDef="Puntuacion">
+                  <th mat-header-cell *matHeaderCellDef> Puntuacion </th>
+                  <td mat-cell *matCellDef="let element"> {{element.puntuacion}} </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+              </table>             
+        </mat-card>
+    </div>
+</div>
+

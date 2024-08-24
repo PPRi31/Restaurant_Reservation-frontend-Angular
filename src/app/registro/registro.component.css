@@ -1,0 +1,31 @@
+.login-container {
+    justify-content: center;
+    align-items: center;
+
+    background-color: #202027;
+  }
+
+.custom-button {
+    margin-right: 10px;
+  }
+  .header{
+    background-color: #2C2C36;
+    width: 87.5%;
+    padding: 20px;
+    margin-bottom: 30px;
+    color: white;
+  } 
+ 
+  mat-card {
+    width: 320px;
+    background-color: #373743;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btnColor {
+    background-color: #7DD435 !important; 
+    color: black !important ;
+    margin-left: 20px;
+  }
+ 

@@ -1,0 +1,32 @@
+.container { 
+
+    background-color: #2D2D35;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    
+}
+
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+h2{
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.logo-section,
+.members-section,
+.copyright-section {
+    flex: 1;
+    margin: 10px;
+}
+@media screen and (max-width: 768px) {
+ .container2{
+    flex-direction: column; }
+  }

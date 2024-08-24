@@ -1,0 +1,67 @@
+.bg {
+  background-color: #202027;
+  height: auto;
+}
+.body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.table-desktop{
+  
+  table-layout: fixed; /* Puedes usar 'auto' o 'fixed' según tus necesidades */
+  border-collapse: collapse;
+}
+
+
+.contenedor-tabla tr th {
+background-color:#2C2C36;
+color: white;
+border: 1px solid #514f4f;
+padding: 10px;
+text-align: left;
+
+}
+.contenedor-tabla tr td {
+  background-color: #202027;
+  color: white;
+  border: 1px solid #514f4f;
+  padding: 5px;
+ 
+  
+  }
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  margin: 20px auto; 
+}
+.contenedor-tabla {
+ padding: 30px;
+ 
+  border-collapse: collapse;
+}
+.centro {
+  width: 100%;
+}
+.btnColor {
+  background-color: #7DD435; 
+  color: black  ;
+ margin: 20px;
+  margin-top: 20px;
+
+
+}
+.contenedor-botones {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .bg {
+      flex-direction: column;
+      font-size: 10px; 
+      height: auto;
+  }
+  .contenedor-tabla {
+    overflow-x: auto;
+  }
+}
